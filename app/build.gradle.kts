@@ -25,8 +25,17 @@ android {
     buildTypes {
 
         debug {
-            buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3\"")
-            buildConfigField("String", "API_KEY", "\"22012045e87f46091838788e961af343\"")
+            buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
+            buildConfigField(
+                "String",
+                "THUMBNAIL_BASE_URL",
+                "\"https://www.themoviedb.org/t/p/w440_and_h660_face\""
+            )
+            buildConfigField(
+                "String",
+                "TOKEN",
+                "\"eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ZTdmZjM1N2VhMjZlYWE3YWJiYTIyNzkwMjgzNGVjZiIsInN1YiI6IjY1Nzk4ZWQ3N2EzYzUyMDBjYTdhODdhNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HMPB-OYib2u2au8LMM0_kt1AvR5_4VYN5dif6CHAo1A\""
+            )
         }
 
         release {
@@ -36,23 +45,33 @@ android {
                 "proguard-rules.pro"
             )
 
-            buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3\"")
-            buildConfigField("String", "API_KEY", "\"22012045e87f46091838788e961af343\"")
+            buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
+            buildConfigField(
+                "String",
+                "THUMBNAIL_BASE_URL",
+                "\"https://www.themoviedb.org/t/p/w440_and_h660_face\""
+            )
+            buildConfigField(
+                "String",
+                "TOKEN",
+                "\"eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ZTdmZjM1N2VhMjZlYWE3YWJiYTIyNzkwMjgzNGVjZiIsInN1YiI6IjY1Nzk4ZWQ3N2EzYzUyMDBjYTdhODdhNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HMPB-OYib2u2au8LMM0_kt1AvR5_4VYN5dif6CHAo1A\""
+            )
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         compose = true
         buildConfig = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+//        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.4.3"
     }
     packaging {
         resources {
@@ -63,7 +82,7 @@ android {
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     implementation("androidx.activity:activity-compose:1.8.1")
     implementation(platform("androidx.compose:compose-bom:2023.08.00"))
