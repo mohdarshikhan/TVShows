@@ -1,4 +1,4 @@
-package com.mak.tvshow
+package com.mak.tvshows
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

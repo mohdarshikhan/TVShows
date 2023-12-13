@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.mak.tvshow"
+    namespace = "com.mak.tvshows"
     compileSdk = 34
 
     defaultConfig {

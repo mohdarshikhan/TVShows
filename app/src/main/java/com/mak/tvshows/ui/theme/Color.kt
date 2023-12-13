@@ -1,4 +1,4 @@
-package com.mak.tvshow.ui.theme
+package com.mak.tvshows.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

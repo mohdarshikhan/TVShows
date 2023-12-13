@@ -1,4 +1,4 @@
-package com.mak.tvshow
+package com.mak.tvshows
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.mak.tvshow.ui.theme.TVShowTheme
+import com.mak.tvshows.ui.theme.TVShowTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

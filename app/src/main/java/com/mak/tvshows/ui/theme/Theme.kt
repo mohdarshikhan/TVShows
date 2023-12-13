@@ -1,4 +1,4 @@
-package com.mak.tvshow.ui.theme
+package com.mak.tvshows.ui.theme
 
 import android.app.Activity
 import android.os.Build
